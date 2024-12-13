@@ -1,20 +1,32 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
-
+name: Feature Request
+description: Suggest a new feature for the project
+title: "[Feature:] "
+labels: ["enhancement"]
+body:
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: What is your name?
+      placeholder: ex. Aphichaya Suppakitkumjorn
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature request!
+  - type: dropdown
+    id: request-type
+    attributes:
+      label: Type of request?
+      description: Select the type of your request
+      options:
+        - New Feature
+        - Improvement
+        - Other
+  - type: textarea
+    id: details
+    attributes:
+      label: What are the details of your suggestion?
+      description: Explain what you want
+      placeholder: Feature details!
 ---
-
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
-
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
-
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
